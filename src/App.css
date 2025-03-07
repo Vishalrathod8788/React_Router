@@ -243,6 +243,14 @@ textarea:focus-visible {
   width: 25%;
 }
 
+.section-navbar .navbar ul li .active {
+  color: #535bf2;
+}
+
+.active {
+  color: #535bf2;
+}
+
 .section-navbar .navbar ul {
   display: flex;
   gap: 3.2rem;

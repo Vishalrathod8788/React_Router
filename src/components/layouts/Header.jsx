@@ -10,8 +10,8 @@ export const Header = () => {
               <p>Free shipping, 30-day return or refund guarantee.</p>
             </div>
             <div className="sing_in_up">
-              <NavLink to="# ">SIGN IN</NavLink>
-              <NavLink to="# ">SIGN UP</NavLink>
+              <NavLink to="">SIGN IN</NavLink>
+              <NavLink to="">SIGN UP</NavLink>
             </div>
           </div>
         </section>
@@ -31,7 +31,12 @@ export const Header = () => {
           <nav className="navbar">
             <ul>
               <li className="nav-item">
-                <NavLink to="/" className="nav-link">
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive ? "nav-link active" : "nav-link"
+                  }
+                >
                   Home
                 </NavLink>
               </li>
@@ -41,7 +46,7 @@ export const Header = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="" className="nav-link">
+                <NavLink to="product" className="nav-link">
                   products
                 </NavLink>
               </li>

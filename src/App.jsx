@@ -6,12 +6,16 @@ import { Contact } from "./pages/Contact";
 import { AppLayout } from "./components/layouts/AppLayout";
 import { Product } from "./pages/Product";
 import "./App.css";
+import { NotFound } from "./pages/NotFound";
+import { Cart } from "./pages/Cart";
 
 const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <AppLayout />,
+      errorElement: <NotFound />,
+
       children: [
         {
           path: "/",
@@ -22,16 +26,16 @@ const App = () => {
           element: <About />,
         },
         {
-          path: "/movie",
-          element: <Movie />,
-        },
-        {
           path: "/product",
           element: <Product />,
         },
         {
           path: "/contact",
           element: <Contact />,
+        },
+        {
+          path: "/cart",
+          element: <Cart />,
         },
       ],
     },

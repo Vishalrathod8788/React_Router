@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export const Header = () => {
   return (
@@ -57,7 +58,7 @@ export const Header = () => {
               </li>
               <li className="nav-item">
                 <NavLink
-                  to="addToCart.html"
+                  to="/cart"
                   className="nav-link add-to-cart-button"
                   id="cartValue"
                 >

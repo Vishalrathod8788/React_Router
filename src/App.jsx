@@ -2,11 +2,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
+import { getMoviesData, Movie } from "./pages/Movie";
 import { AppLayout } from "./components/layouts/AppLayout";
-import { Product } from "./pages/Product";
-import "./App.css";
 import { NotFound } from "./pages/NotFound";
 import { Cart } from "./pages/Cart";
+import "./App.css";
+// import { getMoviesData } from "./api/GetAPIData";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -25,8 +26,9 @@ const App = () => {
           element: <About />,
         },
         {
-          path: "/product",
-          element: <Product />,
+          path: "/movie",
+          loader: getMoviesData,
+          element: <Movie />,
         },
         {
           path: "/contact",

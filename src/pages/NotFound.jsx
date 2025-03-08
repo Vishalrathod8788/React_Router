@@ -27,12 +27,11 @@ export const NotFound = () => {
           </div>
         </div>
         <button className="btn" onClick={handleGoBack}>
-          Go Back To HomePage
+          Go Back
         </button>
       </section>
     );
   }
-  console.log(error);
 
   return <h1> The page you are looking does not exist</h1>;
 };

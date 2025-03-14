@@ -4,7 +4,7 @@ export const Footer = () => {
       <footer className="section-footer">
         <div className="footer-container container">
           <div className="content_1">
-            <img src="./src/components/layouts/logo.png" alt="logo" />
+            <img src="/logo.png" alt="logo" />
             <p>
               Welcome to Thapa EcomStore, <br />
               your ultimate destination for

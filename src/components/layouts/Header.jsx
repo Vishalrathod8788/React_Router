@@ -20,7 +20,7 @@ export const Header = () => {
           <div className="navbar-brand">
             <NavLink to="index">
               <img
-                src="src/components/layouts/log.png"
+                src="/log.png"
                 alt="thapa eCommerce logo"
                 className="logo"
                 width="80%"

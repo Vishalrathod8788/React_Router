@@ -3,6 +3,8 @@ import { Footer } from "./Footer";
 import { Header } from "./Header";
 
 export const AppLayout = () => {
+  if (navigation.state === "loading") return <Loading />;
+
   return (
     <>
       <Header />

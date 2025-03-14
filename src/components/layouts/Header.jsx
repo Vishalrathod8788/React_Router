@@ -56,15 +56,6 @@ export const Header = () => {
                   contact
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink
-                  to="/cart"
-                  className="nav-link add-to-cart-button"
-                  id="cartValue"
-                >
-                  <i className="fa-solid fa-cart-shopping"> 0 </i>
-                </NavLink>
-              </li>
             </ul>
           </nav>
         </div>

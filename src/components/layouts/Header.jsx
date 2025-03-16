@@ -20,7 +20,7 @@ export const Header = () => {
           <div className="navbar-brand">
             <NavLink to="index">
               <img
-                src="/log.png"
+                src="src/components/layouts/log.png"
                 alt="thapa eCommerce logo"
                 className="logo"
                 width="80%"
@@ -54,6 +54,15 @@ export const Header = () => {
               <li className="nav-item">
                 <NavLink to="Contact" className="nav-link">
                   contact
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  to="/cart"
+                  className="nav-link add-to-cart-button"
+                  id="cartValue"
+                >
+                  <i className="fa-solid fa-cart-shopping"> 0 </i>
                 </NavLink>
               </li>
             </ul>

@@ -4,36 +4,36 @@ export const Footer = () => {
       <footer className="section-footer">
         <div className="footer-container container">
           <div className="content_1">
-            <img src="/logo.png" alt="logo" />
+            {/* <img src="/logo.png" alt="logo" /> */}
             <p>
-              Welcome to Thapa EcomStore, <br />
+              Welcome to MovieDB App, <br />
               your ultimate destination for
               <br />
-              cutting-edge gadgets!
+              discovering amazing movies!
             </p>
             <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards" />
           </div>
           <div className="content_2">
-            <h4>SHOPPING</h4>
-            <a href="#">Computer Store</a>
-            <a href="#">Laptop Store</a>
-            <a href="#">Accessories</a>
-            <a href="#">Sales & Discount</a>
+            <h4>MOVIES</h4>
+            <a href="#">Popular Movies</a>
+            <a href="#">Top Rated</a>
+            <a href="#">New Releases</a>
+            <a href="#">Genres</a>
           </div>
           <div className="content_3">
-            <h4>Experience</h4>
+            <h4>Explore</h4>
             <a href="./contact">Contact Us</a>
             <a href="" target="_blank">
               {" "}
-              Payment Method{" "}
+              Movie Reviews{" "}
             </a>
             <a href="" target="_blank">
               {" "}
-              Delivery{" "}
+              Watchlist{" "}
             </a>
             <a href="" target="_blank">
               {" "}
-              Return and Exchange{" "}
+              Movie News{" "}
             </a>
           </div>
           <div className="content_4">
@@ -41,7 +41,7 @@ export const Footer = () => {
             <p>
               Be the first to know about new
               <br />
-              arrivals, sales & promos!
+              movie releases & updates!
             </p>
             <div className="f-mail">
               <input type="email" placeholder="Your Email" />

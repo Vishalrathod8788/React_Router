@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <>
       <header className="section-navbar">
-        <section className="top_txt">
+        {/* <section className="top_txt">
           <div className="head container">
             <div className="head_txt">
               <p>Free shipping, 30-day return or refund guarantee.</p>
@@ -15,17 +15,11 @@ export const Header = () => {
               <NavLink to="">SIGN UP</NavLink>
             </div>
           </div>
-        </section>
+        </section> */}
         <div className="container">
           <div className="navbar-brand">
-            <NavLink to="index">
-              <img
-                src="src/components/layouts/log.png"
-                alt="thapa eCommerce logo"
-                className="logo"
-                width="80%"
-                height="auto"
-              />
+            <NavLink to="/" style={{ textDecoration: "none", cursor: "pointer" }}>
+              <p style={{ fontWeight: "bold", margin: 0 }}>MovieDB App</p>
             </NavLink>
           </div>
 
@@ -42,27 +36,27 @@ export const Header = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="About" className="nav-link">
-                  about
+                <NavLink to="/about" className="nav-link">
+                  About
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink to="/movie" className="nav-link">
-                  Movie
+                  Movies
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="Contact" className="nav-link">
-                  contact
+                <NavLink to="/contact" className="nav-link">
+                  Contact
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink
-                  to="/cart"
+                  to="/Watchlist"
                   className="nav-link add-to-cart-button"
                   id="cartValue"
                 >
-                  <i className="fa-solid fa-cart-shopping"> 0 </i>
+                  <i className="fa-solid fa-heart"> 0 </i>
                 </NavLink>
               </li>
             </ul>

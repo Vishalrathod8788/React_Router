@@ -5,11 +5,11 @@ import { Contact, contactData } from "./pages/Contact";
 import { Movie } from "./pages/Movie";
 import { AppLayout } from "./components/layouts/AppLayout";
 import { NotFound } from "./pages/NotFound";
-import { Cart } from "./pages/Cart";
 import "./App.css";
 import { getMovieDetails } from "./api/GetMovieDetails";
 import { MovieDetails } from "./components/UI/MovieDetails";
 import { getMoviesData } from "./api/GetAPIData";
+import { Watchlist } from "./pages/Watchlist";
 // import { getMoviesData } from "./api/GetAPIData";
 
 const App = () => {
@@ -44,8 +44,8 @@ const App = () => {
           action: contactData,
         },
         {
-          path: "/cart",
-          element: <Cart />,
+          path: "/watchlist",
+          element: <Watchlist />,
         },
       ],
     },
